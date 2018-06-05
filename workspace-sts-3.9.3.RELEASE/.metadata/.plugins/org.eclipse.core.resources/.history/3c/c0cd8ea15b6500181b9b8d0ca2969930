@@ -1,0 +1,5 @@
+package com.clustering.project.dao;
+
+public class MemberDao {
+
+}

@@ -1,0 +1,5 @@
+package com.clustering.project.javabean;
+
+public class OrganizationBean {
+
+}

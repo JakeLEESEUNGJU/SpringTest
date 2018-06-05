@@ -1,0 +1,5 @@
+package com.mcdeli.app.controller;
+
+public class SignUpController {
+
+}

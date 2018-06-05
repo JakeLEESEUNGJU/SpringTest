@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- home by user -->
+
+	<definition name="layout.user"
+		template="/WEB-INF/views/template/layout_user_main.jsp">
+		<put-attribute name="layout.header"
+			value="/WEB-INF/views/template/header.jsp" />
+		<put-attribute name="layout.left"
+			value="/WEB-INF/views/template/user_left.jsp" />
+		<put-attribute name="layout.top"
+			value="/WEB-INF/views/template/user_top.jsp" />
+	</definition>
+
+	<!-- home -->
+	<definition name="home" extends="layout.user">
+		<put-attribute name="layout.body"
+			value="/WEB-INF/views/ptc_home.jsp" />
+		<put-attribute name="layout.title" value="Here home" />
+	</definition>
+	<!-- member -->
+	<definition name="/member/edit"
+		template="/WEB-INF/views/template/layout_user_main.jsp">
+
+		<put-attribute name="layout.header"
+			value="/WEB-INF/views/template/ptc_header.jsp" />
+		<put-attribute name="layout.left"
+			value="/WEB-INF/views/template/ptc_left.jsp" />
+		<put-attribute name="layout.top"
+			value="/WEB-INF/views/template/ptc_top.jsp" />
+		<put-attribute name="layout.body"
+			value="/WEB-INF/views/member/edit.jsp" />
+		<put-attribute name="layout.title" value="Here home" />
+	</definition>
+	
+	<!-- member list -->
+	<definition name="/member/list" extends="layout.user">
+		<put-attribute name="layout.body" value="/WEB-INF/views/member/list.jsp">
+		</put-attribute>
+		<put-attribute name="layout.title" value="Here home" />
+	</definition>
+</tiles-definitions>

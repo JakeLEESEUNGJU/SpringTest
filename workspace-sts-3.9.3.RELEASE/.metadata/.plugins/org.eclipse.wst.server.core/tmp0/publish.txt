@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu May 31 10:40:32 KST 2018
+org.eclipse.jst.jee.server\:CIP_DownloadSource=C\:\\sts-bundle\\pivotal-tc-server-developer-3.2.9.RELEASE\\base-instance\\wtpwebapps\\CIP_DownloadSource
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\student\\.m2\\repository\\org\\springframework\\spring-web\\4.1.6.RELEASE\\spring-web-4.1.6.RELEASE.jar=C\:\\sts-bundle\\pivotal-tc-server-developer-3.2.9.RELEASE\\base-instance\\wtpwebapps\\CIP_DownloadSource\\WEB-INF\\lib\\spring-web-4.1.6.RELEASE.jar

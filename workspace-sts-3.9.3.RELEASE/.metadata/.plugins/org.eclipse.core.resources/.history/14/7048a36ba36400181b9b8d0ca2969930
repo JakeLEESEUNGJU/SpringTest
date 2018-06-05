@@ -1,0 +1,25 @@
+package com.clustering.project.javabean;
+
+public class CommonCodeBean {
+	// → Input element name과 Mapping ...
+	String DESCRIPTION,NAME;
+
+	public String getDESCRIPTION() {
+		return DESCRIPTION;
+	}
+
+	public void setDESCRIPTION(String dESCRIPTION) {
+		DESCRIPTION = dESCRIPTION;
+	}
+
+	public String getNAME() {
+		return NAME;
+	}
+
+	public void setNAME(String nAME) {
+		NAME = nAME;
+	}
+
+	
+
+}

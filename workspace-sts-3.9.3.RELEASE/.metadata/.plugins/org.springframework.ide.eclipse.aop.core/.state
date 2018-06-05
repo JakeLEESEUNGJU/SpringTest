@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Mcdonald"/>
+<aop-project name="Test_SP"/>
+<aop-project name="CIP_DownloadSource"/>
+</aop-reference-model>

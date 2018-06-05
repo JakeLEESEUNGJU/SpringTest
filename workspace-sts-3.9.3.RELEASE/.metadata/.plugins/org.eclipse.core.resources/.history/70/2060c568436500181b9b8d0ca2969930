@@ -1,0 +1,25 @@
+package com.clustering.project.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.clustering.project.service.MemberService;
+
+@Controller
+@RequestMapping(value = "/member")
+public class MemberController {
+	@Autowired
+	private MemberService service;
+
+	public ModelAndView actionMethod(@RequestParam ...) { ... } 
+	
+	else if("read".equalsIgnoreCase(action)) {
+		viewName = viewName + action; 
+		resultMap = (Map<String, Object>) service.getObject(viewName, paramMap); 
+		}
+	else 
+	@RequestMapping(value = { "/edit", "/list" },	method = { RequestMethod.GET, RequestMethod.POST })
+
+}

@@ -1,0 +1,27 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page session="false"%>
+<html>
+<head>
+<title>Home</title>
+</head>
+<body>
+	<c:set var="salary" value="${2000*2}" />
+	<c:if test="${salary > 2000}">
+		<p>My salary is: ${salary}
+	</c:if>
+	<h1>Hello world!</h1>
+	<c:forEach var="i" begin="1" end="5">
+	Item <c:out value="${i}" />
+		<p>
+	</c:forEach>
+	<P>The time on the server is ${serverTime}.</P>
+	<c:set var="salary" value="${2000*2}" />
+	<c:choose>
+		<c:when test="${salary <= 0}"> Very low to survive.</c:when>
+		<c:when test="${salary > 1000}"> Very good. </c:when>
+		<c:otherwise> No comment sir... </c:otherwise>
+	</c:choose>
+
+		<a href="<c:url value = "/"/>">TEST</a>
+</body>
+</html>

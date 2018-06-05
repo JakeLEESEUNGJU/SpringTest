@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- home by user -->
+	<definition name="home"
+		template="/WEB-INF/views/template/layout_user_main.jsp">
+		
+		<put-attribute name="layout.header"
+			value="/WEB-INF/views/template/ptc_header.jsp" />
+		<put-attribute name="layout.left"
+			value="/WEB-INF/views/template/ptc_left.jsp" />
+		<put-attribute name="layout.top"
+			value="/WEB-INF/views/template/ptc_top.jsp" />
+		
+		<put-attribute name="layout.m.edit"
+			value="/WEB-INF/views/template/m_edit.jsp">
+		</put-attribute>
+	</definition>
+	
+	<definition name="home" extends="layout.user">
+		<put-attribute name="layout.title" value="Here home" />
+		<put-attribute name="layout.body"
+			value="/WEB-INF/views/home.jsp" />
+	</definition>
+</tiles-definitions>
